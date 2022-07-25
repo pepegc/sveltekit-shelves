@@ -17,7 +17,7 @@
 
     let vars = {
         width:{
-            label:'Largo',
+            label:'Wide',
             min:400,
             max:1200,
             step:50,
@@ -26,7 +26,7 @@
             value:1000,
         },
         depth:{
-            label:'Fondo',
+            label:'Deep',
             min:200,
             max:800,
             step:50,
@@ -35,7 +35,7 @@
             value:400,
         },
         height:{
-            label:'Alto',
+            label:'Height',
             min:500,
             max:3500,
             step:50,
@@ -44,7 +44,7 @@
             value:1800,
         },
         shelves:{
-            label:'Niveles',
+            label:'Shelves',
             min:3,
             max:14,
             step:1,
@@ -94,14 +94,13 @@
     {#each Object.entries(vars) as [_, v]}
     <label>{v.label}<input type="range" bind:value={v.value} min={v.min} max={v.max} step={v.step} />{ v.value*v.scale }{v.suffix}</label>
     {/each}
+    <!--
     <label>E Largo<input type="number" bind:value={room_x} min={400} max={1200} step={10} />{ room_x/10 } cm</label>
     <label>E Ancho<input type="number" bind:value={room_y} min={400} max={1200} step={10} />{ room_y/10 } cm</label>
-    <!--
     <label>Largo<input type="range" bind:value={width} min={400} max={1200} step={10} />{ width/10 } cm</label>
     <label>Fondo<input type="range" bind:value={depth} min={200} max={800} step={10} />{ depth/10 } cm</label>
     <label>Alto<input type="range" bind:value={height} min={500} max={2500} step={10} />{ height/10 } cm</label>
     <label>Niveles<input type="range" bind:value={shelves} min={3} max={14} step={1} color={0xFF0000}/>{ shelves }</label>
-
     -->
 </div>
 
