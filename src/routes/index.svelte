@@ -17,7 +17,7 @@
 
     let vars = {
         width:{
-            label:'Wide',
+            label:'Width',
             min:400,
             max:1200,
             step:50,
@@ -26,7 +26,7 @@
             value:1000,
         },
         depth:{
-            label:'Deep',
+            label:'Depth',
             min:200,
             max:800,
             step:50,
@@ -44,7 +44,7 @@
             value:1800,
         },
         shelves:{
-            label:'Shelves',
+            label:'Shelve count',
             min:3,
             max:14,
             step:1,
